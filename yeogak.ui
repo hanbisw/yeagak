@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1177</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Arial</family>
+    <pointsize>12</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>놀GO 자Go Ver 1.0</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>UiDir/stay_icon_m.png</normaloff>UiDir/stay_icon_m.png</iconset>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1920</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFiles">
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>기본정보</string>
+    </property>
+    <widget class="QMenu" name="menu_4">
+     <property name="title">
+      <string>사용자 관리</string>
+     </property>
+     <addaction name="action_userid_issue"/>
+     <addaction name="separator"/>
+     <addaction name="action_userpwd_change"/>
+     <addaction name="separator"/>
+     <addaction name="action_userid_mnt"/>
+     <addaction name="separator"/>
+    </widget>
+    <widget class="QMenu" name="menu_5">
+     <property name="title">
+      <string>숙박 어풀</string>
+     </property>
+     <addaction name="action_appcomp_info"/>
+     <addaction name="separator"/>
+     <addaction name="action_appcomp_use_info"/>
+     <addaction name="separator"/>
+    </widget>
+    <addaction name="action_basic_yeogak_info"/>
+    <addaction name="separator"/>
+    <addaction name="menu_5"/>
+    <addaction name="separator"/>
+    <addaction name="menu_4"/>
+    <addaction name="separator"/>
+    <addaction name="action_exit"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menureverse">
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>예약정보</string>
+    </property>
+    <addaction name="action_mon_reserve_management"/>
+    <addaction name="separator"/>
+    <addaction name="action_period_reserve_mnt"/>
+    <addaction name="separator"/>
+    <addaction name="action_day_reserve_pst"/>
+    <addaction name="separator"/>
+    <addaction name="action_month_reserve_pst"/>
+    <addaction name="separator"/>
+    <addaction name="action_period_reserve_pst"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>지출정보</string>
+    </property>
+    <addaction name="action_day_expenses_mnt"/>
+    <addaction name="separator"/>
+    <addaction name="action_day_expenses_pst"/>
+    <addaction name="separator"/>
+    <addaction name="action_month_expenses_pst"/>
+    <addaction name="separator"/>
+    <addaction name="action_period_expenses_pst"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>매출정보</string>
+    </property>
+    <addaction name="action_month_sales_pst"/>
+    <addaction name="separator"/>
+    <addaction name="action_year_sales_pst"/>
+    <addaction name="separator"/>
+    <addaction name="action_period_sales_pst"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>예약취소정보</string>
+    </property>
+    <addaction name="action_reserve_cancel_day_mnt"/>
+    <addaction name="separator"/>
+    <addaction name="action_day_cancel_pst"/>
+    <addaction name="separator"/>
+    <addaction name="action_month_cancel_pst"/>
+    <addaction name="separator"/>
+    <addaction name="action_period_cancel_pst"/>
+    <addaction name="separator"/>
+   </widget>
+   <addaction name="menuFiles"/>
+   <addaction name="menureverse"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <action name="action_mon_reserve_management">
+   <property name="text">
+    <string>월 예약 관리</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+    </font>
+   </property>
+  </action>
+  <action name="action_period_reserve_mnt">
+   <property name="text">
+    <string>기간별 예약 관리</string>
+   </property>
+  </action>
+  <action name="actionbasic_banggea_info">
+   <property name="text">
+    <string>숙박 시설 정보 관리</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actionapp_homepage_info">
+   <property name="text">
+    <string>숙박 어풀 홈페이지 정보 관리</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_day_sales_pst">
+   <property name="text">
+    <string>일별 매출 현황</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_month_sales_pst">
+   <property name="text">
+    <string>월별 매출 현황</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_period_sales_pst">
+   <property name="text">
+    <string>기간별 매출 현황</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_year_sales_pst">
+   <property name="text">
+    <string>연간 매출 현황</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_month_expenses">
+   <property name="text">
+    <string>월 지출 관리</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_day_expenses_mnt">
+   <property name="text">
+    <string>지출 관리</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_day_expenses_pst">
+   <property name="text">
+    <string>일자별 지출 현황</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_month_expenses_pst">
+   <property name="text">
+    <string>월별 지출 현황</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_quart_expenses_pst">
+   <property name="text">
+    <string>분기별 지출 현황</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_year_expenses_pst">
+   <property name="text">
+    <string>연간 지출 현황</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_period_expenses_pst">
+   <property name="text">
+    <string>기간별 지출 현황</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_day_reserve_perscondi">
+   <property name="text">
+    <string>일별 예약 현황</string>
+   </property>
+  </action>
+  <action name="action_month_reserve_pst">
+   <property name="text">
+    <string>월별 예약 현황</string>
+   </property>
+  </action>
+  <action name="action_period_reserve_pst">
+   <property name="text">
+    <string>기간별 예약 현황</string>
+   </property>
+  </action>
+  <action name="action_exit">
+   <property name="text">
+    <string>종 료</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_basic_yeogak_info">
+   <property name="text">
+    <string>우리 시설 정보 관리</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>12</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+  </action>
+  <action name="action_reserve_cancel_day_mnt">
+   <property name="text">
+    <string>예약 취소 관리</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_period_cancel_pst">
+   <property name="text">
+    <string>기간별 예약 취소 현황</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_userid_issue">
+   <property name="text">
+    <string>사용자 ID 발급</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_userpwd_change">
+   <property name="text">
+    <string>비밀번호 변경</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_userid_mnt">
+   <property name="text">
+    <string>사용자 ID 관리</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_appcomp_info">
+   <property name="text">
+    <string>숙박 어풀 정보 관리</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_appcomp_use_info">
+   <property name="text">
+    <string>숙박 어풀 사용여부 관리</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_day_reserve_pst">
+   <property name="text">
+    <string>일일 호실 및 예약자 정보</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_month_cancel_pst">
+   <property name="text">
+    <string>월별 예약 취소 현황</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_day_cancel_pst">
+   <property name="text">
+    <string>일자별 예약 취소 현황</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
